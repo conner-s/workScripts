@@ -1,3 +1,4 @@
 {
-    "avManagerUrl": "https://example.url"
+    "avManagerUrl": "https://example.url",
+    "username": "appvol_admin"
 }

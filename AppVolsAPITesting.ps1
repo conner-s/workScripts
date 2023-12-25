@@ -4,10 +4,11 @@
 # Define the App Volumes Manager URL from the config JSON file
 $config = Get-Content 'config.json' | ConvertFrom-Json
 $avManagerUrl = $config.avManagerUrl
+$username = $config.username
 
 # Authentication body
 $authBody = @{
-    username = "conner_admin"
+    username = $username
     password = Read-Host -Prompt "Enter your password"
 }
 
